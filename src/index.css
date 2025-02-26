@@ -1,0 +1,1037 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Navbar Css Start */
+.navbar {
+  background: #f8f9fa;
+  border-radius: 10px;
+  height: auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;  /* Ensure wrapping on small screens */
+}
+
+.logo-img {
+  max-width: 80px;
+  height: auto;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.nav-link-custom {
+  text-decoration: none;
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+  padding: 8px 15px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.nav-link-custom:hover {
+  color: #1dd746;
+  transform: translateY(-2px);
+}
+
+/* ✅ Buttons Hover Animation */
+.btn-custom {
+  background: #1dd746;
+  color: white;
+  border-radius: 8px;
+  padding: 8px 20px;
+  border: none;
+  transition: 0.3s;
+  position: relative;
+  cursor: pointer;
+}
+
+.btn-custom:hover {
+  background: #17b83c;
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ✅ Mobile Responsive Fixes */
+@media (max-width: 992px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  .nav-item {
+    width: 100%;
+    padding: 8px 0;
+  }
+
+  .btn-custom {
+    width: 80%;
+    margin-top: 10px;
+  }
+}
+
+/* ✅ Extra Small Devices (Mobile Phones) */
+@media (max-width: 576px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .logo-img {
+    max-width: 60px;
+  }
+
+  .btn-custom {
+    width: 100%;
+  }
+}
+
+/* Navbar Css End */
+
+
+/* Footer Css Start */
+footer {
+  background: #f8f9fa;
+  color: #333;
+  padding: 50px 0;
+}
+
+footer h5 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+footer p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+footer ul li a:hover {
+  color: #1dd746;
+}
+
+/* ✅ Social Icons */
+footer .d-flex i {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+footer .d-flex i:hover {
+  transform: scale(1.1);
+}
+
+/* ✅ Input Field & Button */
+footer input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+footer .custom-btn {
+  background: #1dd746;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+footer .custom-btn:hover {
+  background: #17b83c;
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  footer .col-12 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  footer .d-flex {
+    justify-content: center;
+  }
+
+  footer form {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+/* Footer Css End */
+
+
+/* Internee Portal Css Start */
+
+/* Card Container */
+.custom-card {
+  max-width: 500px; 
+  background: #f8f9fa; 
+  border-radius: 10px; 
+  padding: 20px;
+  width: 100%;
+}
+
+/* Logo */
+.custom-logo {
+  max-width: 70%; 
+  height: auto;
+}
+
+/* Input Fields */
+.custom-input {
+  border-radius: 8px; 
+  border: 2px solid whitesmoke;
+  padding: 10px;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.custom-input:focus {
+  border-color: #1dd746;
+  box-shadow: 0 0 8px rgba(29, 215, 70, 0.5);
+}
+
+/* Buttons */
+.custom-btn {
+  background: #1dd746;
+  color: white;
+  border-radius: 8px;
+  padding: 10px 15px;
+  width: 100%;
+  border: none;
+  transition: 0.3s;
+}
+
+.custom-btn:hover {
+  background: #17b83c;
+}
+
+/* Forget Password */
+.forget-password {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.forget-password:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .custom-card {
+    padding: 15px;
+  }
+
+  .custom-btn {
+    padding: 8px;
+  }
+
+  .custom-logo {
+    max-width: 50%;
+  }
+}
+
+/* Internee Portal Css End */
+
+
+
+
+
+.section{
+  background-color: #f8f9fa;
+  
+}
+.card-section{
+  margin-bottom: 3px;
+  background: linear-gradient(90deg, rgb(68, 255, 154) -0.55%, rgb(68, 176, 255) 22.86%, rgb(139, 68, 255) 48.36%, rgb(255, 102, 68) 73.33%, rgb(235, 255, 112) 99.34%);
+
+}
+
+.c-card {
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  height: 270px;
+  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.c-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(126, 72, 72, 0.2);
+}
+
+
+
+/* Graducate Progarm */
+
+
+/* Card Hover Effect */
+.intern-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+}
+
+.intern-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Custom Button Styling */
+.custom-btn {
+  background-color: #1dd746;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.custom-btn:hover {
+  background-color: #16a736;
+}
+
+/* Image Fix */
+.card-img-top {
+  max-height: 180px; /* Consistent height for all images */
+  object-fit: cover;
+}
+
+/* Graducate Progarm */
+
+.checked {
+  color: orange;
+  padding-right: 5px;
+}
+
+.second-section{
+  margin: 50px;
+}
+
+
+
+.img-div {
+  margin: 50px auto; /* Centering */
+  text-align: center;
+}
+
+.img {
+  max-width: 100%; /* Ensure responsiveness */
+  height: 30rem; /* Maintain aspect ratio */
+  border-radius: 7px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  position: relative;
+  margin-left: 50px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: green;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  border: 2px solid green;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  position: absolute;
+  left: -50px;
+}
+
+.icon i {
+  color: green;
+  font-size: 18px;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+
+.button-container {
+  display: flex;
+  align-items: center;
+  gap: 20px; 
+}
+
+.button {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.video-button {
+  display: flex;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.play-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  position: relative;
+}
+
+.play-icon::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 10px solid orange;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  position: absolute;
+}
+
+.bg-section{
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url('/public/WhatsApp\ Image\ 2025-02-05\ at\ 15.58.33_cf9225e1.jpg');
+  background-size: cover;
+  background-position: fixed;
+  
+  
+}
+.container-div{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.text-div{
+  font-size: larger;
+  color: white;
+}
+
+
+.foam-div {
+  background-color: rgba(26, 26, 26, 0.95);
+  color: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.foam-div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.contant-foam h5 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.contant-foam p {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #ddd;
+}
+
+/* Yahan sy miskte aa rahi hai ager isko active kar rhy hain to internee.pk k foam py issue aa raha hai */
+.contact-from {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+} 
+
+ .contact-from::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  
+ }
+
+.contact-from:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+
+}
+
+.get-button {
+  
+  padding: 12px;
+  background-color: darkgreen;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.get-button:hover {
+  background-color: #17b83c;
+  transform: scale(1.05);
+}
+.section-1{
+  margin: 80px;
+}
+.section-2{
+  margin-top:  120px;
+}
+.section-3{
+  margin-top:  150px;
+}
+
+.icon-box {
+  border: 2px solid #4CAF50;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+.icon-box:hover {
+  transform: scale(1.05);
+  border: 3px solid #4CAF50;
+  box-shadow: 0px 0px 15px cyan, 0px 0px 15px #4CAF50;
+}
+.icon-box i {
+  font-size: 40px;
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+.icon-box h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+.icon-box p {
+  font-size: 16px;
+  color: #333;
+}
+
+.stepper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 20px 0;
+}
+.step {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #dcdcdc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  position: relative;
+  z-index: 2;
+
+}
+.step-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: transparent;
+  z-index: 1;
+ 
+}
+.step-line::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  width: 100%;
+  height: 2px;
+  border-top: 2px dotted #dcdcdc;
+  
+}
+.step-content {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Home Page Css */
+
+
+.look-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.look-container img {
+  max-width: 100px; /* Ensure images don't overflow */
+  height: auto;
+}
+
+.look-btn {
+  width: 100%;
+  max-width: 200px;
+  margin: 10px auto;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.image-container img {
+  max-width: 120px; /* Adjust size */
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .image-container img {
+    max-width: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-container {
+    gap: 10px;
+  }
+  .image-container img {
+    max-width: 60px;
+  }
+}
+
+.sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.container-img {
+  width: 50%; /* ✅ Width 50% set ki */
+  max-width: 600px; /* ✅ Maximum width define ki */
+  min-width: 320px; /* ✅ Chhoti screen pe bhi readable rahe */
+}
+
+.container-img img {
+  width: 100%;
+  max-width: 180px; /* ✅ Image ka size control kiya */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.p-i {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .container-img {
+    width: 70%; /* ✅ Tablet screens pe width 70% */
+  }
+
+  .container-img img {
+    max-width: 160px; /* ✅ Tablet pe thodi chhoti image */
+  }
+
+  .p-i {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-img {
+    width: 90%; /* ✅ Mobile screens pe width 90% */
+  }
+
+  .container-img img {
+    max-width: 140px; /* ✅ Mobile pe aur chhoti image */
+  }
+
+  .p-i {
+    font-size: 14px;
+  }
+}
+
+
+.section {
+  padding: 50px 20px;
+}
+
+.card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  max-height: 180px;
+  object-fit: contain;
+}
+
+.btn.custom-btn {
+  background-color: #1dd746;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn.custom-btn:hover {
+  background-color:  #1dd746;
+}
+
+/* Browse More Internship Button (Same as Apply Now Button) */
+.browse-btn {
+  width: auto;
+  padding: 12px 24px;
+  font-size: 18px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .col-md-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+  .card-image img {
+    max-height: 160px;
+  }
+
+  .btn.custom-btn {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-image img {
+    max-height: 140px;
+  }
+
+  .btn.custom-btn {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
+
+.card-section {
+  padding: 50px 20px;
+}
+
+.c-card {
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.c-card:hover {
+  transform: translateY(-5px);
+}
+
+.stars {
+  color: #f4c542;
+}
+
+.checked {
+  color: #f4c542;
+}
+
+@media (max-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+
+.portal-img img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .portal-img {
+    margin-bottom: 20px;
+  }
+}
+.portal-img img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .portal-img {
+    margin-bottom: 20px;
+  }
+}
+.portal-img img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .portal-img {
+    margin-bottom: 20px;
+  }
+}
+
+
+#typed-output {
+  
+  min-height: 50px; 
+  line-height: 1.5; /* Line spacing improve karega */
+  white-space: pre-line;
+  font-size: 40px; /* Text ko readable banayega */
+  color: #1dd746;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.image-container {
+  display: flex;
+  justify-content: center; /* Center images horizontally */
+  align-items: center; /* Align images vertically */
+  gap: 28px; /* Space between images */
+  flex-wrap: wrap; /* If needed, wrap to the next line */
+}
+
+.image-container img {
+  width: 12%; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.container-img {
+  text-align: center;
+  /* padding: 50px 20px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Ye content ko center karega */
+  height: 80vh; /* Pura viewport height cover karega */
+  position: relative;
+}
+
+.p-i {
+  width: 60%; /* Paragraph ko 50% width dena */
+  text-align: center; /* Text center align */
+}
+.button-container2{
+  display: flex;
+  justify-content: center;
+
+}
+.blog-card {
+  max-width: 300px; 
+  height: 38rem;
+  background-color: white;
+  border-radius: 10px; 
+  padding: 2px
+}
+
+
+
+
+.portal-img {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Image ko center karega */
+  height: 100%; /* Parent ka pura height cover karega */
+}
+
+.portal-img img {
+  max-width: 100%; /* Responsive image */
+  height: auto;
+  display: block; /* Center alignment ke liye */
+}
+
+.look-container {
+  display: flex;
+  margin-top: 20px;
+  justify-content: left; /* Center images horizontally */
+  align-items: center; /* Align images vertically */
+  gap: 28px; /* Space between images */
+  flex-wrap: wrap; /* If needed, wrap to the next line */
+}
+
+.look-container img {
+  width: 12%; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.look-btn {
+  background: #1dd746;
+  color: white;
+  border-radius: 8px;
+  padding: 8px 20px;
+  border: none;
+  transition: 0.3s;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+
+.look-btn:hover {
+  background: #17b83c;
+}
+

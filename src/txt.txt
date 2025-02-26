@@ -1,0 +1,52 @@
+.card-section {
+  margin-bottom: 3px;
+  background: linear-gradient(90deg, rgb(68, 255, 154) -0.55%, rgb(68, 176, 255) 22.86%, rgb(139, 68, 255) 48.36%, rgb(255, 102, 68) 73.33%, rgb(235, 255, 112) 99.34%);
+  overflow: hidden; /* Ensures no horizontal scrolling */
+  padding: 20px; /* Adds space inside */
+}
+
+.container {
+  max-width: 100%;
+  overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
+.row {
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.c-card {
+  width: 100%;
+  max-width: 350px; /* Sets max width for better control */
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  height: auto; /* Auto height for flexibility */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 15px;
+  text-align: center;
+}
+
+.c-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(126, 72, 72, 0.2);
+}
+
+/* 🔹 Mobile Responsive Fixes */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .c-card {
+    width: 90%; /* Cards take 90% of screen width */
+    max-width: 400px; /* Prevents excessive stretching */
+  }
+  
+  .card-section {
+    padding: 10px; /* Less padding on small screens */
+  }
+}
