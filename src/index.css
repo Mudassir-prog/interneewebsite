@@ -1,10 +1,34 @@
 body {
-  margin: 0;
+  /* margin: 0; */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.row {
+  margin: 0;
+}
+
+/* 3. Flexbox containers ka overflow fix */
+.parent-container {
+  display: flex;
+  flex-wrap: wrap; /* Responsive layout ensure karega */
+}
+
+/* 4. Images aur videos ka overflow fix */
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 5. HTML and Body ka width proper rakhna */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 code {
@@ -66,6 +90,7 @@ code {
   transition: 0.3s;
   position: relative;
   cursor: pointer;
+  
 }
 
 .btn-custom:hover {

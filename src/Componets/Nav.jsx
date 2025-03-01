@@ -42,8 +42,8 @@ export default function Navbar() {
           </ul>
 
           {/* Right Side Buttons */}
-          <div className="d-flex">
-            <Link className="btn btn-custom" to={'jobportal'}>Job Portal</Link>
+          <div className="d-flex ms-auto">
+            {/* <Link className="btn btn-custom" to={'jobportal'}>Job Portal</Link> */}
             <Link className="btn btn-outline-primary btn-custom ms-2" to={'interneesportal'}>Internee's Login</Link>
           </div>
         </div>
