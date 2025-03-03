@@ -24,11 +24,6 @@ export default function CompanyCollabration() {
                   <p>Internship Provided</p>
                 </div>
               </div>
-
-
-
-
-
               {/* card 2 */}
               <div className="col-md-3 mb-2 mb-lg-2 mb-md-2 mt-2 mt-md-2 mt-lg-2">
                 <div className="icon-box">
@@ -37,8 +32,6 @@ export default function CompanyCollabration() {
                   <p>LinkedIn Family</p>
                 </div>
               </div>
-
-
               {/* card 3 */}
               <div className="col-md-3 mb-2 mb-lg-2 mb-md-2 mt-2 mt-md-2 mt-lg-2">
                 <div className="icon-box">
@@ -47,7 +40,6 @@ export default function CompanyCollabration() {
                   <p>Courses on LMS</p>
                 </div>
               </div>
-
 
               {/* card 4 */}
 
@@ -63,11 +55,6 @@ export default function CompanyCollabration() {
           </section>
         </div>
       </section>
-
-
-
-
-
 
       <section className='section-3'>
         <div className="container mt-5">
@@ -105,12 +92,6 @@ export default function CompanyCollabration() {
           </div>
         </div>
       </section>
-
-
-
-
-
-
 
       <section className='section-3' >
         <Contact></Contact>

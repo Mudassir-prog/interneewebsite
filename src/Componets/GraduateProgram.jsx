@@ -2,9 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export default function GraduateProgram() {
-
-
-
     const internships = [
         { title: "Information Technology", img: "/it.jpeg" },
         { title: "Health Care", img: "/health.jpg" },
@@ -13,17 +10,9 @@ export default function GraduateProgram() {
         { title: "Engineering", img: "/eng.jpg" },
       ];
 
-
-
-
-
-
-
     return (
         <>
-            
-
-            <section>
+         <section>
                 <div className="container my-5">
                     <div className="row align-items-center">
                         {/* Left Content */}
@@ -54,11 +43,6 @@ export default function GraduateProgram() {
                     </div>
                 </div>
             </section>
-
-
-
-
-
 <section>
       <div className="container my-5">
         <div className="row d-flex justify-content-center">
@@ -85,9 +69,6 @@ export default function GraduateProgram() {
         </div>
       </div>
     </section>
-
-
-
         </>
     )
 }

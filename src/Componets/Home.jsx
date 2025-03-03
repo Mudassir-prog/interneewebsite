@@ -7,13 +7,8 @@ export default function Home() {
 
 
 
-
-
-
   return (
     <>
-
-
       <section className='mt-5 mb-5 try-sec'>
         <div className="container">
           <div className="row d-flex align-items-center justify-content-center">
@@ -431,15 +426,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-
-
-
-
-
     </>
-
-
   )
 }
 
